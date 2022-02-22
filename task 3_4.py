@@ -1,12 +1,11 @@
-def add(x, y):
-        x = float(x)
-        y = int(y)
-        if x <= 0 or y >= 0:
-            return "Введите данные корректно."
-        try:
-            return x**y
-        except ValueError:
-            print("Попытайтесь ещё раз.")
-            return
-
-print(add(float(input("Введите значение x: ")), int(input("Введите значение y: "))))
+def add():
+        x = 0
+        list = input("Введите числа или stop: ")
+        for i in list:
+            if i == 'stop':
+                return x, True
+            try:
+                x += int(i)
+            except ValueError:
+                pass
+        return x, False
