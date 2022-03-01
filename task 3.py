@@ -1,9 +1,9 @@
 names = []
 num = 0
 res = 0
-min_sal = 100000
+min_sal = 20000
 
-with open(r"C:\Users\DELL\Downloads\rus.txt", "r", encoding='utf-8') as file_obj:
+with open(r"C:\Users\DELL\PycharmProjects\python\task 3.txt", "r", encoding='utf-8') as file_obj:
     for line in file_obj:
         num += 1
         name, inc = (elem for elem in line.split())
