@@ -1,4 +1,4 @@
-f = open('file_task_01.txt', 'w')
+f = open(r'C:\Users\DELL\Downloads\Русанова.txt', 'w')
 print("Введите текст в файл: ")
 while True:
     text = input()
